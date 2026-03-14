@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Christina 💌</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="birthday-page" id="view-1">
+    <section class="card">
+      <section class="envelope-grid" aria-label="Letters from Prince">
+        <figure class="envelope-item">
+          <img src="pics/envelope.png" alt="Letter envelope" />
+          <figcaption>From Sunima</figcaption>
+        </figure>
+        <figure class="envelope-item">
+          <img src="pics/envelope.png" alt="Letter envelope" />
+          <figcaption>From Sneha</figcaption>
+        </figure>
+        <figure class="envelope-item">
+          <img src="pics/envelope.png" alt="Letter envelope" />
+          <figcaption>From Prince</figcaption>
+        </figure>
+        <figure class="envelope-item">
+          <img src="pics/envelope.png" alt="Letter envelope" />
+          <figcaption>From Jez</figcaption>
+        </figure>
+      </section>
+    </section>
+  </main>
+
+  <audio id="view-2-audio" src="C:\Users\sneha\Downloads\birthday\music\Gorillaz - On Melancholy Hill (Official Video).mp3" loop preload="auto"></audio>
+  <main class="birthday-page hidden" id="view-2">
+    <section class="card second-view-card">
+      <div class="gallery-inner">
+        <h2 class="gallery-header">HAPPY BIRTHDAY</h2>
+        <div class="picture-container">
+          <div class="picture-box"><img src="pics/9.jpeg" alt="Photo 1" /></div>
+          <div class="picture-box"><img src="pics/1.jpeg" alt="Photo 2" /></div>
+          <div class="picture-box"><img src="pics/3.jpeg" alt="Photo 3" /></div>
+          <div class="picture-box"><img src="pics/4.jpeg" alt="Photo 4" /></div>
+          <div class="picture-box"><img src="pics/5.jpeg" alt="Photo 5" /></div>
+          <div class="picture-box"><img src="pics/6.jpeg" alt="Photo 6" /></div>
+          <div class="picture-box"><img src="pics/7.jpeg" alt="Photo 7" /></div>
+          <div class="picture-box"><img src="pics/8.jpeg" alt="Photo 8" /></div>
+          <div class="picture-box"><img src="pics/2.jpeg" alt="Photo 9" /></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="popup-overlay" id="popup-overlay" aria-hidden="true">
+    <div class="popup" role="dialog" aria-modal="true">
+      <button class="popup-close" type="button" aria-label="Close message">
+        ×
+      </button>
+      <div class="popup-content">
+        <div class="popup-text" id="popup-text"></div>
+        <img id="popup-image" class="popup-image" alt="Message from Jez" style="display: none;" />
+      </div>
+    </div>
+  </div>
+
+  <div class="toggle-container">
+    <button class="toggle-button toggle-view-btn" aria-label="Previous View">
+      &#8592;
+    </button>
+    <button class="toggle-button toggle-view-btn" aria-label="Next View">
+      &#8594;
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

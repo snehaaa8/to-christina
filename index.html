@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+
+        body,
+        html {
+
+            background-image: url("pics/first_page.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: 'Outfit', sans-serif;
+            /* Beautiful gradient background */
+            /*background: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #413737;
+            overflow: hidden;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            animation: fadeIn 1.5s ease-out;
+
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            margin: 0;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            letter-spacing: -2px;
+        }
+
+        .icon-link {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-top: 3rem;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            animation: bounce 2s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+        }
+
+        .icon-link:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.15) translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+            animation-play-state: paused;
+        }
+
+        .icon-link img {
+            width: 70%;
+            height: 70%;
+            object-fit: contain;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(15px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--<h1>To Christina</h1>
+        <p>Happy Birthday my love!</p>-->
+        <a href="index1.html" class="icon-link" aria-label="Go to next page">
+            <img src="pics/click-me.png" alt="Click Me">
+        </a>
+    </div>
+</body>
+
+</html>
